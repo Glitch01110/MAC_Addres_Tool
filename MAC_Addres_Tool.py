@@ -11,8 +11,10 @@ def get_arguments():
 
     if not options.Network:
         parser.error("[-] Please specify a network interface, use -e")
+        exit()
     if not options.MAC_Address:
         parser.error("[-] Please specify a MAC address, use -m")
+        exit()
 
     return options
 
